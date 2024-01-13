@@ -1,9 +1,9 @@
 .section_card-claro {
-  @apply bg-fundo_secundario-claro;
+  @apply bg-fundo_secundario-claro border-borda-claro;
 }
 
 .section_card-escuro {
-  @apply bg-fundo_secundario-escuro;
+  @apply bg-fundo_secundario-escuro border-borda-escuro;
 }
 
 .duvidas_pergunta {

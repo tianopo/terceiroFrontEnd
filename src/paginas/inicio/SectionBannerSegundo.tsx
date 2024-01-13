@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
+import { Section } from "src/componentes";
 import { BotaoOnClick } from "src/componentes/Botoes/BotaoOnClick";
-import { Section } from "../Section";
 
-export const SectionBanner = ({
+export const SectionBannerSegundo = ({
   id,
   children,
   imagem,
@@ -18,7 +18,7 @@ export const SectionBanner = ({
   return (
     <Section id={id}>
       <div className="relative h-96 bg-fixed" style={{ backgroundImage: `url('${imagem}')` }}>
-        <div className="absolute inset-0 flex min-w-0 flex-col items-end justify-end gap-3 p-12 text-center text-white">
+        <div className="absolute inset-0 flex min-w-0 flex-col items-center justify-center gap-3 p-12 text-center text-white">
           <img src="/projeto/logo.svg" alt={titulo} className="h-20 w-24" />
           {titulo && <h1 className="mb-4 text-justify text-36 font-bold">{titulo}</h1>}
           {descricao && (
@@ -27,7 +27,8 @@ export const SectionBanner = ({
             </p>
           )}
           {botao && rota && (
-            <BotaoOnClick className="text-white" onClick={handleButtonClick}>
+            <BotaoOnClick className="text-white flex flex-row gap-3 items-center" onClick={handleButtonClick}>
+              <img src="/sociais/whatsapp.png" alt="icone de whatsapp" className="h-6 w-6" />
               {botao}
             </BotaoOnClick>
           )}

@@ -1,10 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { Outlet } from "react-router-dom";
 import { useTema } from "src/hooks";
-import { Flex } from "../Flex/Flex";
 import { CX } from "../Tags/ConteudoX";
 import { Footer } from "./Footer";
-import { Sidebar } from "./Sidebar";
+import { Header } from "./Header";
 
 export const Layout = () => {
   const { tema } = useTema();
@@ -26,23 +25,20 @@ export const Layout = () => {
   ];
 
   return (
-    <Flex className={`home-${tema}`}>
-      <Sidebar
+    <CX tipo="div" className={`home-${tema}`}>
+      <Header
         imagem="/projeto/logo.svg"
         navbar={nav}
         titulo="Fábrica de Software"
         temaCor
         idioma
       />
-      <CX tipo="div" className="">
-        <Outlet />
-        <Footer
-          titulo="Matheus Henrique de Abreu"
-          description={t("description")}
-          icones={icones}
-          nav={nav}
-        />
-      </CX>
-    </Flex>
+      <Outlet />
+      <Footer
+        titulo="Matheus Henrique de Abreu"
+        description={t("description")}
+        icones={icones}
+      />
+    </CX>
   );
 };

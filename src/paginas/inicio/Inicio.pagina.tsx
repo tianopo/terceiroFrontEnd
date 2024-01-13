@@ -1,5 +1,8 @@
+import { CarProfile, Moon, Table } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import { FlexCol, SectionBanner, SectionCard, SectionContato } from "src/componentes";
+import { SectionBannerSegundo } from "./SectionBannerSegundo";
+import { SectionCardSegundo } from "./SectionCardSegundo";
 import { SectionDuvidas } from "./SectionDuvidas";
 
 export const Inicio = () => {
@@ -8,53 +11,19 @@ export const Inicio = () => {
 
   const card = [
     {
-      titulo: t("teste"),
       descricao:
         t("cardDescricao"),
-      imagem: "/projeto/foto.png",
+      icone: <Moon size={60} />,
     },
     {
-      titulo: t("teste"),
       descricao:
         t("cardDescricao"),
-      imagem: "/projeto/foto.png",
+      icone: <CarProfile size={60} />,
     },
     {
-      titulo: t("teste"),
       descricao:
         t("cardDescricao"),
-      imagem: "/projeto/foto.png",
-    },
-    {
-      titulo: t("teste"),
-      descricao:
-        t("cardDescricao"),
-      imagem: "/projeto/foto.png",
-    },
-    {
-      titulo: t("teste"),
-      descricao:
-        t("cardDescricao"),
-      imagem: "/projeto/foto.png",
-    },
-  ];
-
-  const card2 = [
-    {
-      titulo: t("teste"),
-      descricao:
-        t("cardDescricao"),
-      imagem: "/projeto/foto.png",
-      botao: true,
-      rota: "https://wa.me/5512982435638",
-    },
-    {
-      titulo: t("teste"),
-      descricao:
-        t("cardDescricao"),
-      imagem: "/projeto/foto.png",
-      botao: true,
-      rota: "https://wa.me/5512982435638",
+      icone: <Table size={60} />,
     },
   ];
 
@@ -69,13 +38,19 @@ export const Inicio = () => {
       <SectionCard
         titulo="Fábrica de Software"
         descricao={t("sectionCardDescricao")}
-        botao={t("cardBotao")}
         rota="https://wa.me/5512982435638"
         card={card}
         id="card1"
       />
+      <SectionBannerSegundo
+        imagem="/projeto/banner.webp"
+        titulo="Fábrica de Software"
+        descricao={t("bannerDescricao")}
+        rota="https://wa.me/5512982435638"
+        botao="Agende seu Orçamento"
+      />
       <SectionDuvidas id="duvidas" />
-      <SectionCard card={card2} id="card2" rota="https://wa.me/5512982435638" />
+      <SectionCardSegundo card={card} id="card2" />
       <SectionContato id="contato" titulo={t("contatoTitulo")} />
     </FlexCol>
   );

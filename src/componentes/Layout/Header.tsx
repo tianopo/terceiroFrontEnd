@@ -28,7 +28,8 @@ export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => 
       <CX
         tipo="header"
         className={`
-      fixed
+      sticky
+      top-0
       z-10
       flex
       h-20
@@ -126,7 +127,6 @@ export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => 
           {temaCor && <BotaoTrocarTema />}
         </FlexRow>
       </CX>
-      <CX tipo="div" className="h-20 w-full"></CX>
     </>
   );
 };
