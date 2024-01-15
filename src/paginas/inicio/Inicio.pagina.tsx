@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { FlexCol, SectionBanner, SectionCard, SectionContato } from "src/componentes";
 import { SectionBannerSegundo } from "./SectionBannerSegundo";
 import { SectionCardSegundo } from "./SectionCardSegundo";
-import { SectionDuvidas } from "./SectionDuvidas";
 
 export const Inicio = () => {
   const { t: tradutor } = useTranslation();
@@ -48,10 +47,11 @@ export const Inicio = () => {
         descricao={t("bannerDescricao")}
         rota="https://wa.me/5512982435638"
         botao="Agende seu Orçamento"
+        id="banner"
       />
-      <SectionDuvidas id="duvidas" />
-      <SectionCardSegundo card={card} id="card2" />
+      <SectionCardSegundo card={card} id="icones" />
       <SectionContato id="contato" titulo={t("contatoTitulo")} />
     </FlexCol>
   );
 };
+// arrumar os erros na linguagem, arrumar o e-mail a linguagem deles na label

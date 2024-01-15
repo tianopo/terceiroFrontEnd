@@ -1,9 +1,9 @@
 .section_card-claro {
-  @apply bg-fundo_secundario-claro border-borda-claro;
+  @apply bg-fundo_secundario-claro border-fundo_secundario-claro hover:border-erro-claro;
 }
 
 .section_card-escuro {
-  @apply bg-fundo_secundario-escuro border-borda-escuro;
+  @apply bg-fundo_secundario-escuro border-fundo_secundario-escuro hover:border-erro-escuro;
 }
 
 .duvidas_pergunta {
@@ -24,4 +24,20 @@
 
 .duvidas_td {
   @apply px-6 py-4 text-16 font-normal text-white;
+}
+
+.section_botao-claro {
+  @apply bg-verde-claro;
+}
+
+.section_botao-escuro {
+  @apply bg-verde-escuro;
+}
+
+.section_icone-claro {
+  @apply border-borda-claro text-icone-claro;
+}
+
+.section_icone-escuro {
+  @apply border-borda-escuro text-icone-escuro;
 }

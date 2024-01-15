@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useTema } from "src/hooks";
 import { LocalStorage } from "src/utils";
+import { setLocaleYup } from "src/utils/validacoesYup";
 import { CX } from "../Tags/ConteudoX";
 
 interface IBotaoTrocarIdioma {
@@ -41,6 +42,7 @@ export const BotaoTrocarIdioma = ({ menuBottom }: IBotaoTrocarIdioma) => {
 
   useEffect(() => {
     i18n.changeLanguage(idiomaSelecionado);
+    setLocaleYup(idiomaSelecionado);
   }, [idiomaSelecionado, i18n]);
 
   return (

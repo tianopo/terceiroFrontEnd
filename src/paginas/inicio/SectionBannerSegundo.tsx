@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { Section } from "src/componentes";
 import { BotaoOnClick } from "src/componentes/Botoes/BotaoOnClick";
+import { useTema } from "src/hooks";
 
 export const SectionBannerSegundo = ({
   id,
@@ -11,13 +12,14 @@ export const SectionBannerSegundo = ({
   botao,
   rota,
 }: ISectionBanner) => {
+  const { tema } = useTema()
   const handleButtonClick = () => {
     window.location.href = rota || "";
   };
 
   return (
-    <Section id={id}>
-      <div className="relative h-96 bg-fixed" style={{ backgroundImage: `url('${imagem}')` }}>
+    <Section>
+      <div className="relative h-96 bg-fixed" style={{ backgroundImage: `url('${imagem}')` }} id={id}>
         <div className="absolute inset-0 flex min-w-0 flex-col items-center justify-center gap-3 p-12 text-center text-white">
           <img src="/projeto/logo.svg" alt={titulo} className="h-20 w-24" />
           {titulo && <h1 className="mb-4 text-justify text-36 font-bold">{titulo}</h1>}
@@ -27,7 +29,7 @@ export const SectionBannerSegundo = ({
             </p>
           )}
           {botao && rota && (
-            <BotaoOnClick className="text-white flex flex-row gap-3 items-center" onClick={handleButtonClick}>
+            <BotaoOnClick className={`text-white flex flex-row gap-3 items-center section_botao-${tema}`} onClick={handleButtonClick}>
               <img src="/sociais/whatsapp.png" alt="icone de whatsapp" className="h-6 w-6" />
               {botao}
             </BotaoOnClick>

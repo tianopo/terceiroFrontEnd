@@ -1,58 +1,58 @@
 export const coresX = {
   primaria: {
-    claro: "#BACCD6",
-    escuro: "#829eab",
+    claro: "#D6E4EB",
+    escuro: "#8FA6B0",
   },
   secundaria: {
-    claro: "#3DA0A8",
-    escuro: "#688797",
+    claro: "#6CC7D8",
+    escuro: "#A5C2CC",
   },
-  terciaria: {
-    claro: "#FF5733",
-    escuro: "#E74C3C",
+  verde: {
+    claro: "#5CB85C",
+    escuro: "#4CAE4C",
   },
   fundo: {
-    claro: "#F5F5F5",
-    escuro: "#333",
-  },
-  fundo_secundario: {
-    claro: "#282828",
+    claro: "#F8F8F8",
     escuro: "#000",
   },
+  fundo_secundario: {
+    claro: "#E0E0E0",
+    escuro: "#333",
+  },
   escrita: {
-    claro: "#000",
+    claro: "#333",
     escuro: "#FFF",
   },
   erro: {
-    claro: "#FF9494",
+    claro: "#FF7575",
     escuro: "#E74C3C",
   },
   sucesso: {
-    claro: "#4CAF50",
-    escuro: "#28A745",
+    claro: "#70BF81",
+    escuro: "#2E8B57",
   },
   borda: {
     claro: "#ccc",
-    escuro: "#555",
-  },
-  icone: {
-    claro: "#ccc",
-    escuro: "#555",
-  },
-  input: {
-    claro: "#EDEDED",
-    escuro: "#222",
-  },
-  placeholder: {
-    claro: "#888",
     escuro: "#ddd",
   },
+  icone: {
+    claro: "#555",
+    escuro: "#666",
+  },
+  input: {
+    claro: "#F0F0F0",
+    escuro: "#E0E0E0",
+  },
+  placeholder: {
+    claro: "#999",
+    escuro: "#BBB",
+  },
   selecionado: {
-    claro: "#8FB9C6",
-    escuro: "#526A77",
+    claro: "#CCE5F2",
+    escuro: "#AED6E7",
   },
   hover: {
-    claro: "#D5E5E5",
-    escuro: "#6F8F9C",
+    claro: "#EAEAEA",
+    escuro: "#D9D9D9",
   },
 };
