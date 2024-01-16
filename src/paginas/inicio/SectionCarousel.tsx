@@ -56,13 +56,13 @@ export const SectionCarousel = ({ id, imagens }: ISectionCarousel) => {
       </div>
       <button
         onClick={retrocederImagem}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
+        className="absolute top-1/2 left-10 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
       >
         {"<"}
       </button>
       <button
         onClick={avancarImagem}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
+        className="absolute top-1/2 right-10 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
       >
         {">"}
       </button>
