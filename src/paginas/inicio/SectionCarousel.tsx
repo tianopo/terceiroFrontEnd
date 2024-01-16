@@ -32,37 +32,41 @@ export const SectionCarousel = ({ id, imagens }: ISectionCarousel) => {
   }, [indiceImagem]);
 
   return (
-    <Section className="p-8 relative">
-      <div className="relative">
-        {imagens.map((imagem, index) => (
-          <img
-            key={index}
-            src={imagem}
-            alt={`Imagem ${index + 1}`}
-            className={`w-full h-80 object-cover rounded-md ${index === indiceImagem ? "" : "hidden"
-              }`}
-          />
-        ))}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex">
-          {imagens.map((_, index) => (
-            <span
+    <Section className="p-8 relative overflow-hidden">
+      <div className="relative w-full h-80 overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out transform"
+          style={{ width: `${imagens.length * 100}%`, transform: `translateX(-${(indiceImagem / imagens.length) * 100}%)` }}
+        >
+          {imagens.map((imagem, index) => (
+            <img
               key={index}
-              onClick={() => selecionarImagem(index)}
-              className={`h-4 w-4 bg-white rounded-full inline-block mx-1 cursor-pointer ${index === indiceImagem ? "opacity-100" : "opacity-50"
-                }`}
+              src={imagem}
+              alt={`Imagem ${index + 1}`}
+              className="w-full h-80 object-cover rounded-md"
             />
           ))}
         </div>
       </div>
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex">
+        {imagens.map((_, index) => (
+          <span
+            key={index}
+            onClick={() => selecionarImagem(index)}
+            className={`h-4 w-4 bg-white rounded-full inline-block mx-1 cursor-pointer ${index === indiceImagem ? "opacity-100" : "opacity-50"
+              }`}
+          />
+        ))}
+      </div>
       <button
         onClick={retrocederImagem}
-        className="absolute top-1/2 left-10 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
       >
         {"<"}
       </button>
       <button
         onClick={avancarImagem}
-        className="absolute top-1/2 right-10 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
       >
         {">"}
       </button>
