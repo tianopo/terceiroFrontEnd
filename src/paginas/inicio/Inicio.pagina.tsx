@@ -54,4 +54,3 @@ export const Inicio = () => {
     </FlexCol>
   );
 };
-// arrumar os erros na linguagem, arrumar o e-mail a linguagem deles na label
