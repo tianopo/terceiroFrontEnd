@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { FlexCol, SectionBanner, SectionCard, SectionContato } from "src/componentes";
 import { SectionBannerSegundo } from "./SectionBannerSegundo";
 import { SectionCardSegundo } from "./SectionCardSegundo";
+import { SectionCarousel } from "./SectionCarousel";
 
 export const Inicio = () => {
   const { t: tradutor } = useTranslation();
@@ -50,6 +51,7 @@ export const Inicio = () => {
         id="banner"
       />
       <SectionCardSegundo card={card} id="icones" />
+      <SectionCarousel imagens={["/projeto/banner.webp", "/projeto/foto.png", "/flags/br.svg", "/sociais/whatsapp.png"]} />
       <SectionContato id="contato" titulo={t("contatoTitulo")} />
     </FlexCol>
   );
