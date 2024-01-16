@@ -17,7 +17,11 @@ export const SectionBanner = ({
 
   return (
     <Section>
-      <div className="relative h-96 bg-fixed" style={{ backgroundImage: `url('${imagem}')` }} id={id}>
+      <div
+        className="relative h-96 bg-fixed"
+        style={{ backgroundImage: `url('${imagem}')` }}
+        id={id}
+      >
         <div className="absolute inset-0 flex min-w-0 flex-col items-end justify-end gap-3 p-12 text-center text-white">
           <img src="/projeto/logo.svg" alt={titulo} className="h-20 w-24" />
           {titulo && <h1 className="mb-4 text-justify text-36 font-bold">{titulo}</h1>}

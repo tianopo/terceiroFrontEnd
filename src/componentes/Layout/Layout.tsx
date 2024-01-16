@@ -27,19 +27,9 @@ export const Layout = () => {
 
   return (
     <CX tipo="div" className={`home-${tema}`}>
-      <Header
-        imagem="/projeto/logo.svg"
-        navbar={nav}
-        titulo="Fábrica de Software"
-        temaCor
-        idioma
-      />
+      <Header imagem="/projeto/logo.svg" navbar={nav} titulo="Fábrica de Software" temaCor idioma />
       <Outlet />
-      <Footer
-        titulo="Matheus Henrique de Abreu"
-        description={t("description")}
-        icones={icones}
-      />
+      <Footer titulo="Matheus Henrique de Abreu" description={t("description")} icones={icones} />
     </CX>
   );
 };

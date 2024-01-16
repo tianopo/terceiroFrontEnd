@@ -11,18 +11,15 @@ export const Inicio = () => {
 
   const card = [
     {
-      descricao:
-        t("cardDescricao"),
+      descricao: t("cardDescricao"),
       icone: <Moon size={60} />,
     },
     {
-      descricao:
-        t("cardDescricao"),
+      descricao: t("cardDescricao"),
       icone: <CarProfile size={60} />,
     },
     {
-      descricao:
-        t("cardDescricao"),
+      descricao: t("cardDescricao"),
       icone: <Table size={60} />,
     },
   ];
@@ -51,7 +48,15 @@ export const Inicio = () => {
         id="banner"
       />
       <SectionCardSegundo card={card} id="icones" />
-      <SectionCarousel id="imagens" imagens={["/projeto/banner.webp", "/projeto/foto.png", "/flags/br.svg", "/sociais/whatsapp.png"]} />
+      <SectionCarousel
+        id="imagens"
+        imagens={[
+          "/projeto/banner.webp",
+          "/projeto/foto.png",
+          "/flags/br.svg",
+          "/sociais/whatsapp.png",
+        ]}
+      />
       <SectionContato id="contato" titulo={t("contatoTitulo")} />
     </FlexCol>
   );

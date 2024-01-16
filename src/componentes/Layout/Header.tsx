@@ -79,7 +79,7 @@ export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => 
                     text-white
                     hover:underline
                     `}
-                      >
+                  >
                     {texto.toUpperCase()}
                   </TX>
                 </a>
