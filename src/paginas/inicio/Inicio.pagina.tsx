@@ -51,7 +51,7 @@ export const Inicio = () => {
         id="banner"
       />
       <SectionCardSegundo card={card} id="icones" />
-      <SectionCarousel imagens={["/projeto/banner.webp", "/projeto/foto.png", "/flags/br.svg", "/sociais/whatsapp.png"]} />
+      <SectionCarousel id="imagens" imagens={["/projeto/banner.webp", "/projeto/foto.png", "/flags/br.svg", "/sociais/whatsapp.png"]} />
       <SectionContato id="contato" titulo={t("contatoTitulo")} />
     </FlexCol>
   );

@@ -33,7 +33,7 @@ export const SectionCarousel = ({ id, imagens }: ISectionCarousel) => {
 
   return (
     <Section className="p-8 relative overflow-hidden">
-      <div className="relative w-full h-80 overflow-hidden">
+      <div className="relative w-full h-80 overflow-hidden" id={id}>
         <div
           className="flex transition-transform duration-500 ease-in-out transform"
           style={{ width: `${imagens.length * 100}%`, transform: `translateX(-${(indiceImagem / imagens.length) * 100}%)` }}

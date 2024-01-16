@@ -15,6 +15,7 @@ export const Layout = () => {
     { texto: t("cards"), rota: "#card1" },
     { texto: "banner", rota: "#banner" },
     { texto: "icones", rota: "#icones" },
+    { texto: "Imagens", rota: "#imagens" },
     { texto: t("contato"), rota: "#contato" },
   ];
 
