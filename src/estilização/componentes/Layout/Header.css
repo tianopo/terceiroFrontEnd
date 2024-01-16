@@ -3,7 +3,7 @@
 }
 
 .header-escuro {
-  @apply border-borda-escuro bg-fundo_secundario-claro;
+  @apply border-borda-escuro bg-fundo_secundario-escuro;
 }
 
 .header_imagem-claro {
