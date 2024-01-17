@@ -1,5 +1,5 @@
 // BotaoTrocarTema.tsx
-import { Cloud, Moon, Star, Sun } from "@phosphor-icons/react";
+import { Moon, Sun } from "@phosphor-icons/react";
 import { useTema } from "src/hooks";
 import { ITema } from "src/interfaces";
 

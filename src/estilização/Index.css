@@ -3,17 +3,12 @@
 @import "componentes/Botoes/BotaoTrocarIdioma.css";
 @import "componentes/Botoes/BotaoTrocarTema.css";
 
-@import "componentes/Efeitos/Slide.css";
-
-@import "componentes/Formulario/Checkbox.css";
 @import "componentes/Formulario/Input.css";
 @import "componentes/Formulario/Label.css";
 @import "componentes/Formulario/MensagemErro.css";
-@import "componentes/Formulario/Radio.css";
 
 @import "componentes/Layout/Footer.css";
 @import "componentes/Layout/Header.css";
-@import "componentes/Layout/Sidebar.css";
 
 @import "componentes/Outros/Divisor.css";
 @import "componentes/Outros/Link.css";
