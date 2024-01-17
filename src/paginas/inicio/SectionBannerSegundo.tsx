@@ -34,7 +34,7 @@ export const SectionBannerSegundo = ({
           )}
           {botao && rota && (
             <BotaoOnClick
-              className={`flex flex-row items-center gap-3 text-white section_botao-${tema}`}
+              className={`flex flex-row items-center justify-center gap-3 text-white section_botao-${tema}`}
               onClick={handleButtonClick}
             >
               <img src="/sociais/whatsapp.png" alt="icone de whatsapp" className="h-6 w-6" />

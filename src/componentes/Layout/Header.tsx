@@ -4,7 +4,6 @@ import { useTema } from "src/hooks";
 import { BotaoTrocarIdioma } from "../Botoes/BotaoTrocarIdioma";
 import { BotaoTrocarTema } from "../Botoes/BotaoTrocarTema";
 import { FlexRow } from "../Flex/FlexRow";
-import { LinkX } from "../Outros/LinkX";
 import { CX } from "../Tags/ConteudoX";
 import { TX } from "../Tags/TextoX";
 
@@ -119,13 +118,20 @@ export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => 
                     `}
                   >
                     {navbar.map(({ texto, rota }, key: number) => (
-                      <div key={key} className={`menu_navbar-${tema} p-2`}>
-                        <LinkX rota={rota}>
-                          <TX tipo="p" className="fontbold text-24">
-                            {texto.toUpperCase()}
-                          </TX>
-                        </LinkX>
-                      </div>
+                      <a key={key} href={rota}>
+                        <TX
+                          tipo="p"
+                          className={`
+                        p-2
+                        text-16
+                        font-bold
+                        text-white
+                        hover:underline
+                        `}
+                        >
+                          {texto.toUpperCase()}
+                        </TX>
+                      </a>
                     ))}
                   </div>
                 )}
