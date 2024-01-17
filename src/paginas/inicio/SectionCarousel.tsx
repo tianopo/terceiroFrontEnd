@@ -33,7 +33,7 @@ export const SectionCarousel = ({ id, imagens }: ISectionCarousel) => {
 
   return (
     <Section className="relative overflow-hidden p-8">
-      <div className="relative h-80 w-full overflow-hidden" id={id}>
+      <div className="relative h-96 w-full overflow-hidden" id={id}>
         <div
           className="flex transform transition-transform duration-500 ease-in-out"
           style={{
@@ -46,7 +46,7 @@ export const SectionCarousel = ({ id, imagens }: ISectionCarousel) => {
               key={index}
               src={imagem}
               alt={`Imagem ${index + 1}`}
-              className="h-80 w-full rounded-md object-cover"
+              className="h-96 w-full rounded-md bg-cover"
             />
           ))}
         </div>

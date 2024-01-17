@@ -44,7 +44,7 @@ export const Inicio = () => {
         titulo="Fábrica de Software"
         descricao={t("bannerDescricao")}
         rota="https://wa.me/5512982435638"
-        botao="Agende seu Orçamento"
+        botao={t("bannerBotao")}
         id="banner"
       />
       <SectionCardSegundo card={card} id="icones" />
