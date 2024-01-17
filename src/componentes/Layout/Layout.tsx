@@ -4,7 +4,7 @@ import { useTema } from "src/hooks";
 import { CX } from "../Tags/ConteudoX";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
-
+// fechar sidebar
 export const Layout = () => {
   const { tema } = useTema();
   const { t: tradutor } = useTranslation();

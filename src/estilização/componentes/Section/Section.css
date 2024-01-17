@@ -1,9 +1,9 @@
 .section_card-claro {
-  @apply bg-fundo_secundario-claro border-fundo_secundario-claro hover:border-erro-claro;
+  @apply border-fundo_secundario-claro bg-fundo_secundario-claro hover:border-erro-claro;
 }
 
 .section_card-escuro {
-  @apply bg-fundo_secundario-escuro border-fundo_secundario-escuro hover:border-erro-escuro;
+  @apply border-fundo_secundario-escuro bg-fundo_secundario-escuro hover:border-erro-escuro;
 }
 
 .duvidas_pergunta {
@@ -40,4 +40,12 @@
 
 .section_icone-escuro {
   @apply border-borda-escuro text-icone-escuro;
+}
+
+.carousel-claro {
+  @apply bg-fundo_secundario-claro;
+}
+
+.carousel-escuro {
+  @apply bg-fundo_secundario-escuro;
 }
