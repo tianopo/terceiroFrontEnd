@@ -47,7 +47,7 @@ export const SectionCard = ({ id, titulo, descricao, botao, card, rota }: ISecti
         {card?.map(({ titulo, descricao, imagem, rota, botao = false }: ICard, key) => (
           <FlexCol
             key={key}
-            className={`h-fit w-72 items-center gap-1.5 rounded-10 section_card-claro p-3 shadow-xl`}
+            className={`section_card-claro h-fit w-72 items-center gap-1.5 rounded-10 p-3 shadow-xl`}
           >
             {imagem && (
               <img src={imagem} alt={titulo} className="h-16 w-16 rounded-full bg-cover" />

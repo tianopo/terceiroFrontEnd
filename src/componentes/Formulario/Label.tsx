@@ -8,11 +8,10 @@ interface ILabel extends IFormUsos {
 }
 
 export const Label = ({ required, titulo, palavras }: ILabel) => {
-
   return (
     <FlexRow>
       <label htmlFor={palavras} className="block w-fit">
-        <TX tipo="p" className={`text-16 font-normal leading-20 label-claro`}>
+        <TX tipo="p" className={`label-claro text-16 font-normal leading-20`}>
           {titulo}{" "}
           {required && (
             <TX tipo="span" className={`label_required-claro`}>

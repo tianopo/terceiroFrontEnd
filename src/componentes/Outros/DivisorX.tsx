@@ -1,5 +1,3 @@
-
 export const DivisorX = () => {
-
-  return <hr className={`w-full border-1 divisor-claro`}></hr>;
+  return <hr className={`divisor-claro w-full border-1`}></hr>;
 };

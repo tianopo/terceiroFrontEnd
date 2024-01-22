@@ -15,7 +15,7 @@ interface IHeader {
   navbar?: INavbar[];
 }
 
-export const Header = ({ imagem, titulo, navbar, }: IHeader) => {
+export const Header = ({ imagem, titulo, navbar }: IHeader) => {
   const [menuAberto, setMenuAberto] = useState(false);
 
   return (
@@ -23,6 +23,7 @@ export const Header = ({ imagem, titulo, navbar, }: IHeader) => {
       <CX
         tipo="header"
         className={`
+      header-claro
       sticky
       top-0
       z-10
@@ -34,7 +35,6 @@ export const Header = ({ imagem, titulo, navbar, }: IHeader) => {
       rounded-b-6
       border-b-1
       p-3
-      header-claro
       `}
       >
         <FlexRow className="gap-1">
@@ -92,23 +92,23 @@ export const Header = ({ imagem, titulo, navbar, }: IHeader) => {
                 >
                   <Article
                     className={`
+                  navbar_mobile_article-claro
                   h-7
                   w-7
                   font-bold
-                  navbar_mobile_article-claro
                   `}
                   />
                 </button>
                 {menuAberto && (
                   <div
                     className={`
+                    menu_mobile-claro
                     absolute
                     right-0
                     w-auto
                     rounded-6
                     border-1
                     duration-300
-                    menu_mobile-claro
                     `}
                   >
                     {navbar.map(({ texto, rota }, key: number) => (

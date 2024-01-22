@@ -5,13 +5,12 @@ interface IMensagemDeErro {
 }
 
 export const MensagemDeErro = ({ errors }: IMensagemDeErro) => {
-
   if (!errors) {
     return <></>;
   }
 
   return (
-    <TX tipo="span" className={`text-12 font-normal label_required-claro`}>
+    <TX tipo="span" className={`label_required-claro text-12 font-normal`}>
       {errors}
     </TX>
   );

@@ -7,7 +7,6 @@ interface IBotaoSubmit extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const BotaoSubmit = ({ className, children, disabled }: IBotaoSubmit) => {
-
   return (
     <button
       disabled={disabled}
