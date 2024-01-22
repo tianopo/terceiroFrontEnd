@@ -1,12 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Outlet } from "react-router-dom";
-import { useTema } from "src/hooks";
 import { CX } from "../Tags/ConteudoX";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 // fechar sidebar
 export const Layout = () => {
-  const { tema } = useTema();
   const { t: tradutor } = useTranslation();
   const t = (t: string) => tradutor(`layout.${t}`);
 
@@ -26,8 +24,8 @@ export const Layout = () => {
   ];
 
   return (
-    <CX tipo="div" className={`home-${tema}`}>
-      <Header imagem="/projeto/logo.svg" navbar={nav} titulo="Fábrica de Software" temaCor idioma />
+    <CX tipo="div" className={`home-claro`}>
+      <Header imagem="/projeto/logo.svg" navbar={nav} titulo="Fábrica de Software" />
       <Outlet />
       <Footer titulo="Matheus Henrique de Abreu" description={t("description")} icones={icones} />
     </CX>

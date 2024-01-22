@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import { Section } from "src/componentes";
 import { BotaoOnClick } from "src/componentes/Botoes/BotaoOnClick";
-import { useTema } from "src/hooks";
 
 export const SectionBannerSegundo = ({
   id,
@@ -12,7 +11,6 @@ export const SectionBannerSegundo = ({
   botao,
   rota,
 }: ISectionBanner) => {
-  const { tema } = useTema();
   const handleButtonClick = () => {
     window.location.href = rota || "";
   };
@@ -34,7 +32,7 @@ export const SectionBannerSegundo = ({
           )}
           {botao && rota && (
             <BotaoOnClick
-              className={`flex flex-row items-center justify-center gap-3 text-white section_botao-${tema}`}
+              className={`flex flex-row items-center justify-center gap-3 text-white section_botao-claro`}
               onClick={handleButtonClick}
             >
               <img src="/sociais/whatsapp.png" alt="icone de whatsapp" className="h-6 w-6" />

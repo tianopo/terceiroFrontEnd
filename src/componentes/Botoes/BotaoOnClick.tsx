@@ -1,5 +1,4 @@
-import React, { HTMLAttributes, ReactNode } from "react";
-import { useTema } from "src/hooks";
+import { HTMLAttributes, ReactNode } from "react";
 
 interface IBotaoOnClick extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
@@ -7,14 +6,13 @@ interface IBotaoOnClick extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const BotaoOnClick = ({ onClick, children, className }: IBotaoOnClick) => {
-  const { tema } = useTema();
 
   return (
     <button
       onClick={onClick}
       className={`
       botao
-      botao-${tema}
+      botao-claro
       ${className}
       `}
     >

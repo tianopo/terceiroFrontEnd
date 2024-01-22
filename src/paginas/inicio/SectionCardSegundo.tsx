@@ -2,7 +2,6 @@ import { CX, Section } from "src/componentes";
 import { Flex } from "src/componentes/Flex/Flex";
 import { FlexCol } from "src/componentes/Flex/FlexCol";
 import { TX } from "src/componentes/Tags/TextoX";
-import { useTema } from "src/hooks";
 
 interface ISectionCardSegundo {
   id?: string;
@@ -15,7 +14,6 @@ interface ICard {
 }
 
 export const SectionCardSegundo = ({ id, card }: ISectionCardSegundo) => {
-  const { tema } = useTema();
 
   return (
     <Section className="p-4">
@@ -23,9 +21,9 @@ export const SectionCardSegundo = ({ id, card }: ISectionCardSegundo) => {
         {card?.map(({ descricao, icone }: ICard, key) => (
           <FlexCol
             key={key}
-            className={`h-fit w-72 items-center gap-1.5 rounded-10 border-3 section_card-${tema} p-3 shadow-xl`}
+            className={`h-fit w-72 items-center gap-1.5 rounded-10 border-3 section_card-claro p-3 shadow-xl`}
           >
-            <CX tipo="div" className={`rounded-full border-1 p-4 section_icone-${tema}`} id={id}>
+            <CX tipo="div" className={`rounded-full border-1 p-4 section_icone-claro`} id={id}>
               {icone}
             </CX>
             {descricao && (

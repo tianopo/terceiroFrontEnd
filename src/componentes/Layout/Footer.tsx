@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { useTema } from "src/hooks";
 import { Flex } from "../Flex/Flex";
 import { FlexCol } from "../Flex/FlexCol";
 import { FlexRow } from "../Flex/FlexRow";
@@ -21,14 +20,13 @@ interface IFooter {
 }
 
 export const Footer = ({ titulo, description, icones, nav }: IFooter) => {
-  const { tema } = useTema();
   const { t: tradutor } = useTranslation();
   const t = (t: string) => tradutor(`footer.${t}`);
 
   return (
     <footer
       className={`
-      footer-${tema}
+      footer-claro
       flex
       h-fit
       w-full

@@ -1,4 +1,3 @@
-import { useTema } from "src/hooks/configuracao/useTema";
 import { IFormUsos } from "src/interfaces";
 import { labelFormatada } from "src/utils";
 import { FlexCol } from "../Flex/FlexCol";
@@ -21,7 +20,6 @@ export const Textarea = ({
   rows = 4,
 }: ITextarea) => {
   const palavras = labelFormatada(titulo);
-  const { tema } = useTema();
 
   return (
     <FlexCol className={`input_container`}>
@@ -35,7 +33,7 @@ export const Textarea = ({
         rows={rows}
         {...register}
         className={`
-          input-${tema}
+          input-claro
           input
           resize-none
           ${disabled ? "opacity-80" : ""}

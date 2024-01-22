@@ -4,7 +4,6 @@ import { Flex } from "src/componentes/Flex/Flex";
 import { FlexCol } from "src/componentes/Flex/FlexCol";
 import { CX } from "src/componentes/Tags/ConteudoX";
 import { TX } from "src/componentes/Tags/TextoX";
-import { useTema } from "src/hooks";
 import { Section } from "../Section";
 
 interface ISectionCard {
@@ -28,7 +27,6 @@ export const SectionCard = ({ id, titulo, descricao, botao, card, rota }: ISecti
   const rotaClick = () => {
     window.location.href = rota || "";
   };
-  const { tema } = useTema();
 
   return (
     <Section className="p-4">
@@ -49,7 +47,7 @@ export const SectionCard = ({ id, titulo, descricao, botao, card, rota }: ISecti
         {card?.map(({ titulo, descricao, imagem, rota, botao = false }: ICard, key) => (
           <FlexCol
             key={key}
-            className={`h-fit w-72 items-center gap-1.5 rounded-10 section_card-${tema} p-3 shadow-xl`}
+            className={`h-fit w-72 items-center gap-1.5 rounded-10 section_card-claro p-3 shadow-xl`}
           >
             {imagem && (
               <img src={imagem} alt={titulo} className="h-16 w-16 rounded-full bg-cover" />

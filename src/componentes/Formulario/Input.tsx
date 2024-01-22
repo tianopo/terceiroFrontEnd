@@ -1,4 +1,3 @@
-import { useTema } from "src/hooks/configuracao/useTema";
 import { IFormUsos } from "src/interfaces";
 import { labelFormatada } from "src/utils";
 import { FlexCol } from "../Flex/FlexCol";
@@ -21,7 +20,6 @@ export const Input = ({
   tipo = "text",
 }: IInput) => {
   const palavras = labelFormatada(titulo);
-  const { tema } = useTema();
 
   return (
     <FlexCol className="input_container">
@@ -36,7 +34,7 @@ export const Input = ({
         autoComplete="complete"
         className={`
             input
-            input-${tema}
+            input-claro
             ${disabled ? "opacity-80" : ""}
           `}
       />

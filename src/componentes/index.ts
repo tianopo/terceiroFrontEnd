@@ -1,7 +1,5 @@
 export * from "./Botoes/BotaoOnClick";
 export * from "./Botoes/BotaoSubmit";
-export * from "./Botoes/BotaoTrocarIdioma";
-export * from "./Botoes/BotaoTrocarTema";
 
 export * from "./Flex/Flex";
 export * from "./Flex/FlexCol";
@@ -26,3 +24,4 @@ export * from "./Outros/LinkX";
 
 export * from "./Tags/ConteudoX";
 export * from "./Tags/TextoX";
+

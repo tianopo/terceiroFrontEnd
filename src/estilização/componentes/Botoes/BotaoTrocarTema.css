@@ -1,4 +1,0 @@
-/* Cor */
-.botao_trocar_tema-claro {
-  @apply border-borda-claro hover:bg-hover-claro;
-}

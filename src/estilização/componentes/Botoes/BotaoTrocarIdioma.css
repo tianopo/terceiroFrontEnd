@@ -1,4 +1,0 @@
-/* Cor */
-.botao_trocar_idioma-claro {
-  @apply border-borda-claro text-icone-claro hover:bg-selecionado-claro;
-}

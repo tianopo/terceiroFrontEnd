@@ -1,7 +1,5 @@
 /* # Importe de componentes */
 @import "componentes/Botoes/Botao.css";
-@import "componentes/Botoes/BotaoTrocarIdioma.css";
-@import "componentes/Botoes/BotaoTrocarTema.css";
 
 @import "componentes/Formulario/Input.css";
 @import "componentes/Formulario/Label.css";

@@ -6,12 +6,11 @@ import { Form } from "src/componentes/Formulario/Form";
 import { Input } from "src/componentes/Formulario/Input";
 import { Textarea } from "src/componentes/Formulario/Textarea";
 import { TX } from "src/componentes/Tags/TextoX";
-import { useInicio, useTema } from "src/hooks";
+import { useInicio } from "src/hooks";
 import { Section } from "../Section";
 
 export const SectionContato = ({ id, titulo }: ISectionContato) => {
   const { contexto } = useInicio();
-  const { tema } = useTema();
   const { t: tradutor } = useTranslation();
   const t = (t: string) => tradutor(`contato.${t}`);
 
@@ -89,7 +88,7 @@ export const SectionContato = ({ id, titulo }: ISectionContato) => {
               placeholder={t("mensagemPlaceholder")}
               errors={errors.mensagem?.message}
             />
-            <button className={`botao botao-${tema} m-10`}>{t("botaoEnviar")}</button>
+            <button className={`botao botao-claro m-10`}>{t("botaoEnviar")}</button>
             <input type="hidden" name="redirectTo" value={window.location.href}></input>
           </Form>
         </FormProvider>

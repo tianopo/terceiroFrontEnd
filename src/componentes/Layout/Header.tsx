@@ -1,8 +1,5 @@
 import { Article } from "@phosphor-icons/react";
 import { useState } from "react";
-import { useTema } from "src/hooks";
-import { BotaoTrocarIdioma } from "../Botoes/BotaoTrocarIdioma";
-import { BotaoTrocarTema } from "../Botoes/BotaoTrocarTema";
 import { FlexRow } from "../Flex/FlexRow";
 import { CX } from "../Tags/ConteudoX";
 import { TX } from "../Tags/TextoX";
@@ -16,13 +13,10 @@ interface IHeader {
   imagem?: string;
   titulo?: string;
   navbar?: INavbar[];
-  idioma?: boolean;
-  temaCor?: boolean;
 }
 
-export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => {
+export const Header = ({ imagem, titulo, navbar, }: IHeader) => {
   const [menuAberto, setMenuAberto] = useState(false);
-  const { tema } = useTema() ?? {};
 
   return (
     <>
@@ -40,7 +34,7 @@ export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => 
       rounded-b-6
       border-b-1
       p-3
-      header-${tema}
+      header-claro
       `}
       >
         <FlexRow className="gap-1">
@@ -49,7 +43,7 @@ export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => 
               src={imagem}
               alt={titulo}
               className={`
-              header_imagem-${tema}
+              header_imagem-claro
               h-12
               w-10
               rounded-20
@@ -94,14 +88,14 @@ export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => 
                       setMenuAberto(false);
                     }, 100)
                   }
-                  className={`navbar_mobile_botao-${tema} rounded-6 border-1`}
+                  className={`navbar_mobile_botao-claro rounded-6 border-1`}
                 >
                   <Article
                     className={`
                   h-7
                   w-7
                   font-bold
-                  navbar_mobile_article-${tema}
+                  navbar_mobile_article-claro
                   `}
                   />
                 </button>
@@ -114,7 +108,7 @@ export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => 
                     rounded-6
                     border-1
                     duration-300
-                    menu_mobile-${tema}
+                    menu_mobile-claro
                     `}
                   >
                     {navbar.map(({ texto, rota }, key: number) => (
@@ -139,10 +133,6 @@ export const Header = ({ imagem, titulo, navbar, idioma, temaCor }: IHeader) => 
             </FlexRow>
           </>
         )}
-        <FlexRow className="gap-1">
-          {idioma && <BotaoTrocarIdioma />}
-          {temaCor && <BotaoTrocarTema />}
-        </FlexRow>
       </CX>
     </>
   );

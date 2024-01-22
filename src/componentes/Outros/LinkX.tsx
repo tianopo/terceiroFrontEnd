@@ -1,6 +1,5 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { useTema } from "src/hooks/configuracao/useTema";
 
 export interface ILinkX extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
@@ -9,7 +8,6 @@ export interface ILinkX extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const LinkX = ({ rota, children, target }: ILinkX) => {
-  const { tema } = useTema();
 
   return (
     <Link
@@ -22,7 +20,7 @@ export const LinkX = ({ rota, children, target }: ILinkX) => {
       duration-300
       ease-in-out
       hover:opacity-80
-      link-${tema}
+      link-claro
       `}
     >
       {children}
