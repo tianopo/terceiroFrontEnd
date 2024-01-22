@@ -29,16 +29,13 @@ export const SectionCarousel = ({ id, imagens }: ISectionCarousel) => {
     return () => {
       clearInterval(intervalId);
     };
-  }, [indiceImagem]);
+  }, [indiceImagem, avancarImagem]);
 
   const imagemAtual = imagens[indiceImagem];
 
   return (
     <Section className="relative overflow-hidden p-8">
-      <div
-        className="relative h-96 w-full"
-        id={id}
-      >
+      <div className="relative h-96 w-full" id={id}>
         <img
           src={imagemAtual}
           alt={`Imagem ${indiceImagem + 1}`}
