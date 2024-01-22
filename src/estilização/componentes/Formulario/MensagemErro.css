@@ -2,7 +2,3 @@
 .label_required-claro {
   @apply text-erro-claro;
 }
-
-.label_required-escuro {
-  @apply text-erro-escuro;
-}

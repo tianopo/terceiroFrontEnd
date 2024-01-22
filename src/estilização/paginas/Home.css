@@ -1,7 +1,3 @@
 .home-claro {
   @apply border-borda-claro bg-fundo-claro text-escrita-claro;
 }
-
-.home-escuro {
-  @apply border-borda-escuro bg-fundo-escuro text-escrita-escuro;
-}

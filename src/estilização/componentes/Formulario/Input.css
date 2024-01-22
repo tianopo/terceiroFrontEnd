@@ -7,10 +7,6 @@
   @apply border-borda-claro bg-input-claro text-escrita-claro placeholder:text-placeholder-claro focus:border-primaria-claro;
 }
 
-.input-escuro {
-  @apply border-borda-escuro bg-input-escuro text-escrita-escuro placeholder:text-placeholder-escuro focus:border-primaria-escuro;
-}
-
 .input_container {
   @apply gap-1.5 p-2.5;
 }

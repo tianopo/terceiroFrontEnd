@@ -2,7 +2,3 @@
 .link-claro {
   @apply text-escrita-claro hover:text-hover-claro;
 }
-
-.link-escuro {
-  @apply text-escrita-escuro hover:text-hover-escuro;
-}

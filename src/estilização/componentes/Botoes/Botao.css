@@ -6,7 +6,3 @@
 .botao-claro {
   @apply border-borda-claro bg-primaria-claro text-black;
 }
-
-.botao-escuro {
-  @apply border-borda-escuro bg-primaria-escuro text-black;
-}

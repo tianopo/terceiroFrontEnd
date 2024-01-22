@@ -2,7 +2,3 @@
 .botao_trocar_tema-claro {
   @apply border-borda-claro hover:bg-hover-claro;
 }
-
-.botao_trocar_tema-escuro {
-  @apply border-borda-escuro hover:bg-hover-escuro;
-}

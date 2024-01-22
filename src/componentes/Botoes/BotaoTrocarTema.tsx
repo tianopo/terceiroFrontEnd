@@ -7,7 +7,6 @@ export const BotaoTrocarTema = () => {
   const { tema: temaSelecionado, setTema } = useTema();
   const opcoes: { tema: keyof ITema; icone: JSX.Element }[] = [
     { tema: "claro", icone: <Sun size="20px" weight="fill" className="text-icone-claro" /> },
-    { tema: "escuro", icone: <Moon size="20px" weight="fill" className="text-icone-escuro" /> },
   ];
 
   const alternarTema = (novoTema: keyof ITema) => {

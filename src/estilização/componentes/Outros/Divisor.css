@@ -2,7 +2,3 @@
 .divisor-claro {
   @apply border-borda-claro;
 }
-
-.divisor-escuro {
-  @apply border-borda-escuro;
-}

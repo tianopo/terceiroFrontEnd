@@ -2,54 +2,26 @@
   @apply border-borda-claro bg-fundo_secundario-claro;
 }
 
-.header-escuro {
-  @apply border-borda-escuro bg-fundo_secundario-escuro;
-}
-
 .header_imagem-claro {
   @apply border-borda-claro bg-primaria-claro;
-}
-
-.header_imagem-escuro {
-  @apply border-borda-escuro bg-primaria-escuro;
 }
 
 .navbar_texto-claro {
   @apply hover:text-primaria-claro;
 }
 
-.navbar_texto-escuro {
-  @apply hover:text-primaria-escuro;
-}
-
 .navbar_mobile_botao-claro {
   @apply border-borda-claro hover:bg-hover-claro;
-}
-
-.navbar_mobile_botao-escuro {
-  @apply border-borda-escuro hover:bg-hover-escuro;
 }
 
 .navbar_mobile_article-claro {
   @apply text-borda-claro;
 }
 
-.navbar_mobile_article-escuro {
-  @apply text-borda-escuro;
-}
-
 .menu_mobile-claro {
   @apply border-borda-claro bg-fundo-claro;
 }
 
-.menu_mobile-escuro {
-  @apply border-borda-escuro bg-fundo-escuro;
-}
-
 .menu_navbar-claro {
   @apply hover:bg-selecionado-claro;
-}
-
-.menu_navbar-escuro {
-  @apply hover:bg-selecionado-escuro;
 }

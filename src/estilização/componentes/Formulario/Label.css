@@ -2,7 +2,3 @@
 .label-claro {
   @apply text-escrita-claro;
 }
-
-.label-escuro {
-  @apply text-escrita-escuro;
-}

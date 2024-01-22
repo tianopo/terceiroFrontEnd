@@ -2,7 +2,3 @@
 .botao_trocar_idioma-claro {
   @apply border-borda-claro text-icone-claro hover:bg-selecionado-claro;
 }
-
-.botao_trocar_idioma-escuro {
-  @apply border-borda-escuro text-icone-escuro hover:bg-selecionado-escuro;
-}
