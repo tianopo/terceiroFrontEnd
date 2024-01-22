@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Section } from "src/componentes";
 import { useTema } from "src/hooks";
 
@@ -11,13 +11,13 @@ export const SectionCarousel = ({ id, imagens }: ISectionCarousel) => {
   const { tema } = useTema();
   const [indiceImagem, setIndiceImagem] = useState(0);
 
-  const avancarImagem = () => {
+  const avancarImagem = useCallback(() => {
     setIndiceImagem((a) => (a + 1) % imagens.length);
-  };
+  }, [imagens.length]);
 
-  const retrocederImagem = () => {
+  const retrocederImagem = useCallback(() => {
     setIndiceImagem((a) => (a - 1 + imagens.length) % imagens.length);
-  };
+  }, [imagens.length]);
 
   const selecionarImagem = (index: number) => {
     setIndiceImagem(index);
@@ -47,8 +47,9 @@ export const SectionCarousel = ({ id, imagens }: ISectionCarousel) => {
           <span
             key={index}
             onClick={() => selecionarImagem(index)}
-            className={`mx-1 inline-block h-4 w-4 -translate-y-5 cursor-pointer rounded-full carousel-${tema} ${index === indiceImagem ? "opacity-100" : "opacity-50"
-              }`}
+            className={`mx-1 inline-block h-4 w-4 -translate-y-5 cursor-pointer rounded-full carousel-${tema} ${
+              index === indiceImagem ? "opacity-100" : "opacity-50"
+            }`}
           />
         ))}
       </div>
