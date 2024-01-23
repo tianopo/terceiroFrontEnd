@@ -22,7 +22,7 @@ export const SectionBanner = ({
         style={{ backgroundImage: `url('${imagem}')` }}
         id={id}
       >
-        <div className="absolute inset-0 flex min-w-0 flex-col items-end justify-end gap-3 p-12 text-center text-white">
+        <div className="absolute inset-0 flex min-w-0 flex-col items-center justify-start gap-3 p-12 text-center text-white">
           <img src="/projeto/logo.svg" alt={titulo} className="h-20 w-24" />
           {titulo && <h1 className="mb-4 text-justify text-36 font-bold">{titulo}</h1>}
           {descricao && (

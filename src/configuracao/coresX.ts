@@ -1,18 +1,18 @@
 export const coresX = {
   primaria: {
-    claro: "#D6E4EB",
+    claro: "##FFCCCC",
   },
   secundaria: {
-    claro: "#6CC7D8",
+    claro: "#FF6666",
   },
   verde: {
     claro: "#5CB85C",
   },
   fundo: {
-    claro: "#F8F8F8",
+    claro: "#FFEEEE",
   },
   fundo_secundario: {
-    claro: "#E0E0E0",
+    claro: "#AA4444",
   },
   escrita: {
     claro: "#333",
@@ -24,21 +24,21 @@ export const coresX = {
     claro: "#70BF81",
   },
   borda: {
-    claro: "#ccc",
+    claro: "#FFBBBB",
   },
   icone: {
-    claro: "#555",
+    claro: "#AA4444",
   },
   input: {
-    claro: "#F0F0F0",
+    claro: "#FFDDDD",
   },
   placeholder: {
-    claro: "#999",
+    claro: "#FFAAAA",
   },
   selecionado: {
     claro: "#CCE5F2",
   },
   hover: {
-    claro: "#EAEAEA",
+    claro: "#FFCCCC",
   },
 };

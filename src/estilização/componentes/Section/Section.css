@@ -31,5 +31,5 @@
 }
 
 .carousel-claro {
-  @apply bg-fundo_secundario-claro;
+  @apply bg-primaria-claro;
 }

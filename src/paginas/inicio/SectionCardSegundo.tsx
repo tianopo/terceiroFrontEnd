@@ -22,7 +22,7 @@ export const SectionCardSegundo = ({ id, card }: ISectionCardSegundo) => {
             key={key}
             className={`section_card-claro h-fit w-72 items-center gap-1.5 rounded-10 border-3 p-3 shadow-xl`}
           >
-            <CX tipo="div" className={`section_icone-claro rounded-full border-1 p-4`} id={id}>
+            <CX tipo="div" className={`section_icone-claro rounded-full border-1 p-4 text-white`} id={id}>
               {icone}
             </CX>
             {descricao && (

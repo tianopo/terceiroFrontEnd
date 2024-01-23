@@ -10,10 +10,8 @@ export const Layout = () => {
 
   const nav = [
     { texto: t("inicio"), rota: "#" },
-    { texto: t("cards"), rota: "#card1" },
-    { texto: "banner", rota: "#banner" },
-    { texto: "icones", rota: "#icones" },
-    { texto: "Imagens", rota: "#imagens" },
+    { texto: "informações", rota: "#informacoes" },
+    { texto: "agendamento", rota: "#agendamento" },
     { texto: t("contato"), rota: "#contato" },
   ];
 

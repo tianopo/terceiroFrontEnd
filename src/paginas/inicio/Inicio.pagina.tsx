@@ -1,6 +1,6 @@
 import { CarProfile, Moon, Table } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
-import { FlexCol, SectionBanner, SectionCard, SectionContato } from "src/componentes";
+import { FlexCol, SectionContato } from "src/componentes";
 import { SectionBannerSegundo } from "./SectionBannerSegundo";
 import { SectionCardSegundo } from "./SectionCardSegundo";
 import { SectionCarousel } from "./SectionCarousel";
@@ -26,36 +26,21 @@ export const Inicio = () => {
 
   return (
     <FlexCol className="gap-32">
-      <SectionBanner
-        imagem="/projeto/banner.webp"
-        titulo="Fábrica de Software"
-        descricao={t("bannerDescricao")}
-        rota="https://wa.me/5512982435638"
+      <SectionCarousel
+        imagens={[
+          "/projeto/banner.webp",
+          "/projeto/banner2.png",
+          "/projeto/banner3.jpeg",
+        ]}
       />
-      <SectionCard
-        titulo="Fábrica de Software"
-        descricao={t("sectionCardDescricao")}
-        rota="https://wa.me/5512982435638"
-        card={card}
-        id="card1"
-      />
+      <SectionCardSegundo card={card} id="informacoes" />
       <SectionBannerSegundo
         imagem="/projeto/banner.webp"
         titulo="Fábrica de Software"
         descricao={t("bannerDescricao")}
         rota="https://wa.me/5512982435638"
         botao={t("bannerBotao")}
-        id="banner"
-      />
-      <SectionCardSegundo card={card} id="icones" />
-      <SectionCarousel
-        id="imagens"
-        imagens={[
-          "/projeto/banner.webp",
-          "/projeto/foto.png",
-          "/flags/br.svg",
-          "/sociais/whatsapp.png",
-        ]}
+        id="agendamento"
       />
       <SectionContato id="contato" titulo={t("contatoTitulo")} />
     </FlexCol>

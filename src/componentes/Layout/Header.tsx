@@ -37,7 +37,7 @@ export const Header = ({ imagem, titulo, navbar }: IHeader) => {
       p-3
       `}
       >
-        <FlexRow className="gap-1">
+        <FlexRow className="gap-3">
           {imagem && (
             <img
               src={imagem}
@@ -53,7 +53,7 @@ export const Header = ({ imagem, titulo, navbar }: IHeader) => {
             />
           )}
           {titulo && (
-            <TX tipo="h1" className="text-20 font-bold">
+            <TX tipo="h1" className="text-20 font-bold text-white">
               {titulo}
             </TX>
           )}

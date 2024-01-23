@@ -19,7 +19,7 @@
 }
 
 .menu_mobile-claro {
-  @apply border-borda-claro bg-fundo-claro;
+  @apply border-borda-claro bg-fundo_secundario-claro;
 }
 
 .menu_navbar-claro {
