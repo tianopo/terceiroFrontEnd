@@ -1,6 +1,8 @@
 export * from "./Botoes/BotaoOnClick";
 export * from "./Botoes/BotaoSubmit";
 
+export * from "./Efeitos/Slide";
+
 export * from "./Flex/Flex";
 export * from "./Flex/FlexCol";
 export * from "./Flex/FlexRow";
@@ -22,3 +24,4 @@ export * from "./Outros/LinkX";
 
 export * from "./Tags/ConteudoX";
 export * from "./Tags/TextoX";
+

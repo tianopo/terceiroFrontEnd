@@ -1,0 +1,15 @@
+@keyframes slideIn {
+  from {
+    transform: translateY(100vh);
+  }
+
+  to {
+    transform: translateY(0vh);
+  }
+}
+
+.slideIn {
+  animation: slideIn 1s ease-in-out;
+  animation-timing-function: view();
+  animation-range: cover 0% cover 80%;
+}

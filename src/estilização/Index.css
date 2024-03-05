@@ -1,6 +1,8 @@
 /* # Importe de componentes */
 @import "componentes/Botoes/Botao.css";
 
+@import "componentes/Efeitos/Slide.css";
+
 @import "componentes/Formulario/Input.css";
 @import "componentes/Formulario/Label.css";
 @import "componentes/Formulario/MensagemErro.css";
